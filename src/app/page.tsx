@@ -2,6 +2,7 @@ import AboutSection from "./components/AboutSection";
 import ExperiencesSection from "./components/ExperiencesSection";
 import LandingSection from "./components/LandingSection";
 import NavBar from "./components/NavBar";
+import PhotographySection from "./components/PhotographySection";
 import ProjectsSection from "./components/ProjectsSection";
 
 export default function Home() {
@@ -13,6 +14,7 @@ export default function Home() {
         <AboutSection />
         <ExperiencesSection />
         <ProjectsSection />
+        <PhotographySection />
       </div>
     </main>
   );

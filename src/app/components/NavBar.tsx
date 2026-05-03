@@ -10,6 +10,10 @@ const navLinks = [
     path: "#about",
   },
   {
+    title: "Experience",
+    path: "#experiences",
+  },
+  {
     title: "Projects",
     path: "#projects",
   },
@@ -23,26 +27,26 @@ const NavBar = () => {
   const [navbarOpen, setNarbarOpen] = useState(true);
 
   return (
-    <nav className="fixed top-0 left-0 right-0 bg-[#121212] bg-opactiy-100">
-      <div className="flex flex-wrap items-center justify-between mx-auto">
+    <nav className="fixed top-0 left-0 right-0 z-50 bg-transparent px-6 py-4 md:px-12">
+      <div className="flex w-full flex-wrap items-center justify-between">
         <Link
           href={"/"}
-          className="text-2xl md:text-5xl text-white font-semibold"
+          className="text-2xl font-semibold text-white drop-shadow-[0_1px_3px_rgba(0,0,0,0.85)] md:text-5xl"
         >
-          LOGO
+          AZ
         </Link>
         <div className="block md:hidden">
           {navbarOpen ? (
             <button
               onClick={() => setNarbarOpen(false)}
-              className="flex items-center px-3 py-2 border rounded border-slate-200 hover:text-white hover:border-white text-slate-200"
+              className="flex items-center rounded border border-slate-200 px-3 py-2 text-slate-200 drop-shadow-[0_1px_3px_rgba(0,0,0,0.85)] hover:border-white hover:text-white"
             >
               <Bars3Icon className="h-5 w-5" />
             </button>
           ) : (
             <button
               onClick={() => setNarbarOpen(true)}
-              className="flex items-center px-3 py-2 border rounded border-slate-200 hover:text-white hover:border-white text-slate-200"
+              className="flex items-center rounded border border-slate-200 px-3 py-2 text-slate-200 drop-shadow-[0_1px_3px_rgba(0,0,0,0.85)] hover:border-white hover:text-white"
             >
               <XMarkIcon className="h-5 w-5" />
             </button>
